@@ -1,20 +1,19 @@
 import React, { useEffect } from 'react'
 
 const Icon = (props) => {
-  let link = props.link || "#";
-  let target = props.target || "__blank";
-  let a_className = props.a_className || "an";
-  let i_className = props.i_className || "socials";
-  let altText = props.alt || "";
+  // let link = props.link
+  // let target = props.target 
+  // let a_className = props.a_className 
+  // let i_className = props.i_className 
+  // let altText = props.alt 
 
   return (
         <a
-        href={link}
-        target= {target}
-        className={()=>"an " + a_className}
-        onClick={props.onClick}
+        href={props.href}
+        target= {props.target}
+        className={"an " + props.a_classname}
       >
-        <img src={props.src} alt={altText} className={()=>"socials " + i_className} />
+        <img src={props.src} alt={props.alt} className={"socials " + props.i_className} />
       </a>
   )
 }

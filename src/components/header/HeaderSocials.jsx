@@ -9,10 +9,10 @@ const headerSocials = () => {
   return (
     <div className="header__socials">
      
-      <Icon href={()=>"https://www.linkedin.com/in/daniyal-khan-6261b0254/"}
+      <Icon href={"https://www.linkedin.com/in/daniyal-khan-6261b0254/" } target="__blank"
        src={IN}/>
-      <Icon href="https://github.com/dkay7223" src={GH}/>
-      <Icon href="https://hub.docker.com/u/dkay7223" src={Docker}/>
+      <Icon href="https://github.com/dkay7223" src={GH} target="__blank"/>
+      <Icon href="https://hub.docker.com/u/dkay7223" src={Docker} target="__blank"/>
     </div>
   );
 };

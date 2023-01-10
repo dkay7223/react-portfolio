@@ -1,41 +1,34 @@
-import React, { useState } from 'react'
-import './navbar.css'
+import React from "react";
+import "./navbar.css";
+import home from "../../Assets/home.png";
+import exp from "../../Assets/experience.png";
+import about from "../../Assets/book.png";
+import services from "../../Assets/service.png";
+import contact from "../../Assets/user.png";
 
 const Navbar = () => {
-  const [activeNav, setActiveNav] = useState("#")
-
-
   return (
     <div>
       <nav>
+        <a href="#">
+          <img src={home} alt="" />
+        </a>
+        <a href="#about">
+          <img src={about} alt="" />
+        </a>
+        <a href="#experience">
+          <img src={exp} alt="" />
+        </a>
+        <a href="#services">
+          <img src={services} alt="" />
+        </a>
 
-      <a
-        href="#home"
-        className={activeNav==='#home' ? 'an active' : 'an' }
-        onClick={()=>setActiveNav('#home')}
-      >
-        <h3> Home</h3>
-      </a>
-      <a
-        href="#add"
-        className={activeNav==='#add' ? 'an active' : 'an' }
-        onClick={()=>setActiveNav('#add')}
-      >
-        <h3> Add</h3>
-      </a>
-
-      <a
-        href="#update"
-        onClick={()=>setActiveNav('#update')}
-        className={activeNav==='#update' ? 'an active' : 'an' }
-      >
-        <h3>update</h3>
-      </a>
-
-     
+        <a href="#contact">
+          <img src={contact} alt="" />
+        </a>
       </nav>
     </div>
-  )
-} 
+  );
+};
 
-export default Navbar
+export default Navbar;

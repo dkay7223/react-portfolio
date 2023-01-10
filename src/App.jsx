@@ -1,19 +1,31 @@
-import React from 'react'
-import { AddAssignment} from './components';
-import { UpdateAssignment } from './components/Assignment/UpdateAssignment';
-import Home from './components/Welcome/Home'
-import Navbar from './components/nav/Navbar';
+import React from "react";
+import {
+  Navbar,
+  Header,
+  About,
+  Contact,
+  Footer,
+  Portfolio,
+  Services,
+  Testimonials,
+  Experience
+} from "./components/";
 
 const App = () => {
   return (
     <div>
-      <Home/>
-      <Navbar/>
-    <AddAssignment />
-    <UpdateAssignment/>
-    
-    </div>
-  )
-}
+      <Header />
+      <Navbar />
+      <About/>
+      <Experience/>
+      <Services/>
+      <Contact/>
+      <Portfolio/>
+      <Testimonials/>
+      <Footer/>
 
-export default App
+    </div>
+  );
+};
+
+export default App;
