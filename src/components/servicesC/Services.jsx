@@ -73,23 +73,23 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <img src={check} alt="" className="icon" />
-              <p>Javascript Mastery</p>
+              <p>Deployment</p>
             </li>
             <li>
               <img src={check} alt="" className="icon" />
-              <p>Javascript Mastery</p>
+              <p>Github Pages</p>
             </li>
             <li>
               <img src={check} alt="" className="icon" />
-              <p>Javascript Mastery</p>
+              <p>Microsoft Azure</p>
             </li>
             <li>
               <img src={check} alt="" className="icon" />
-              <p>Javascript Mastery</p>
+              <p>Amazon AWS</p>
             </li>
             <li>
               <img src={check} alt="" className="icon" />
-              <p>Javascript Mastery</p>
+              <p>Docker</p>
             </li>
           </ul>
         </article>

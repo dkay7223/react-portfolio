@@ -1,0 +1,138 @@
+.outer__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.tp {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.Product_image {
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 2px 1px #474747;
+
+}
+
+.product_attributes {
+    margin-left: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+.inner__container {
+    width: auto;
+    border-radius: 2rem;
+    background-color: var(--color-dark);
+    padding: 1rem;
+    box-shadow: 0px 0px 2px 1px #212121;
+    transition: 250ms;
+}
+
+.inner__container:hover {
+    background-color: #3b3b3b;
+    box-shadow: 0px 0px 3px 1px rgb(175, 175, 175);
+    transform: scale(102%);
+    transition: 200ms;
+}
+
+.inner_c_buttons {
+    margin-left: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 0.6rem;
+    height: auto;
+}
+
+.inner_c_buttons h3 {
+    margin-right: 4rem;
+    margin-top: 4px;
+}
+
+.inner_c_buttons a {
+    box-shadow: 0px 0px 3px 1px #393939
+}
+
+.inner_c_buttons img {
+    box-shadow: none;
+    width: 24px;
+    height: 24px;
+}
+
+@media screen and (max-width: 1300px) {
+    .outer__container {
+        grid-template-columns: repeat(4, 1fr);
+        /* width: auto; */
+        gap: 1rem;
+    }
+
+    .inner__container {
+       transform: scale(90%);
+    }
+
+    .inner_c_buttons h3 {
+        margin-right: 2rem;
+        margin-top: 4px;
+    }
+}
+
+
+/*========Media queries Medium============*/
+@media screen and (max-width: 1024px) {
+    .outer__container {
+        grid-template-columns: repeat(3, 1fr);
+        width: auto;
+        gap:auto;
+        /* margin: auto; */
+    }
+
+    .inner__container {
+        width: 16rem;
+        padding: 0.9rem;
+    }
+
+    .inner_c_buttons h3 {
+        margin-right: 2rem;
+        margin-top: 4px;
+    }
+}
+
+/*========Media queries Medium============*/
+@media screen and (max-width: 800px) {
+    .outer__container {
+        grid-template-columns: repeat(2, 1fr);
+        width: auto;
+        gap:auto;
+        /* margin: auto; */
+    }
+
+    .inner__container {
+        width: 16rem;
+        padding: 0.9rem;
+    }
+
+    .inner_c_buttons h3 {
+        margin-right: 2rem;
+        margin-top: 4px;
+    }
+}
+
+/*========Media queries small============*/
+@media screen and (max-width: 600px) {
+    .outer__container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+
+    }
+
+    .inner__container {
+        width: auto
+    }
+    .inner_c_buttons{
+        width: auto;
+    }
+}

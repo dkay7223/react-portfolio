@@ -26,15 +26,15 @@ header{
 
 .me{
     
-    background: repeating-linear-gradient(var(--color-primary), transparent);
+    /* background: repeating-linear-gradient(var(--color-primary), transparent); */
     width: 22rem;
-    height: 30rem;
+    height: 29rem;
     position: absolute;
     left: calc(50% - 11rem);
     margin-top: 4rem;
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
-    padding: 5rem 1.5rem 1.5rem 1.5rem;
+    /* padding: 5rem 1.5rem 1.5rem 1.5rem; */
     transition: 200ms;
 }
 
@@ -60,7 +60,7 @@ header{
 /*========Media queries Medium============*/
 @media screen and (max-width: 1024px){
     header{
-        height: 80vh;
+        height: 100vh;
     }
     .header__socials{
         display: none;
@@ -71,7 +71,7 @@ header{
 /*========Media queries small============*/
 @media screen and (max-width: 600px){
     header{
-        height: 80vh;
+        height: 100vh;
     }
     .header__socials{
         display: none;

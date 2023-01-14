@@ -4,7 +4,8 @@ import home from "../../Assets/home.png";
 import exp from "../../Assets/experience.png";
 import about from "../../Assets/book.png";
 import services from "../../Assets/service.png";
-import contact from "../../Assets/user.png";
+import tests from "../../Assets/user.png";
+import contact from '../../Assets/message.png'
 
 const Navbar = () => {
   return (
@@ -22,7 +23,9 @@ const Navbar = () => {
         <a href="#services">
           <img src={services} alt="" />
         </a>
-
+        <a href="#portfolio">
+          <img src={tests} alt="" />
+        </a>
         <a href="#contact">
           <img src={contact} alt="" />
         </a>

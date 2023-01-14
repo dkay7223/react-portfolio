@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 const Icon = (props) => {
   // let link = props.link
@@ -12,6 +12,7 @@ const Icon = (props) => {
         href={props.href}
         target= {props.target}
         className={"an " + props.a_classname}
+        onClick={props.onClick}
       >
         <img src={props.src} alt={props.alt} className={"socials " + props.i_className} />
       </a>
